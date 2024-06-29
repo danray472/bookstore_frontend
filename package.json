@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "react-scripts start --entry ./src/index.js",
-    "build": "vite build --base=./ --outDir=dist",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0"
-  },
+  "start": "vite", 
+  "build": "vite build --base=./ --outDir=dist",
+  "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+},
+
   "dependencies": {
     "axios": "^1.4.0",
     "notistack": "^3.0.1",
