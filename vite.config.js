@@ -15,9 +15,8 @@ export default defineConfig({
     },
   },
   define: {
-    // Define environment variables for Vite
-    'process.env': JSON.stringify(process.env),
-    // Define __dirname for Vite (not needed for React component, but for backend code)
-    '__dirname': JSON.stringify(resolve()),
+    // Define specific frontend environment variables for Vite
+    'process.env.REACT_APP_BACKEND_URL': JSON.stringify(process.env.REACT_APP_BACKEND_URL),
+    // Add other frontend-specific environment variables here
   },
 });
