@@ -3,9 +3,13 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  root: './', // This is the default, but ensure it points to your project root
+  root: './',
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      input: 'public/index.html',
+    },
   },
-  publicDir: 'public', // Ensure this is set if using a 'public' directory
+  publicDir: 'public',
 });
+
