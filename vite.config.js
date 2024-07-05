@@ -11,7 +11,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: 'src/index.jsx',
+      input: 'src/index.js',
     },
   },
   define: {
