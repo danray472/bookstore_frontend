@@ -10,9 +10,6 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
-    rollupOptions: {
-      input: 'src/index.js',
-    },
   },
   define: {
     // Define specific frontend environment variables for Vite
