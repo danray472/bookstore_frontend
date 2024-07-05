@@ -17,6 +17,5 @@ export default defineConfig({
   define: {
     // Define specific frontend environment variables for Vite
     'process.env.REACT_APP_BACKEND_URL': JSON.stringify(process.env.REACT_APP_BACKEND_URL),
-    // Add other frontend-specific environment variables here
   },
 });
